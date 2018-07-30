@@ -12,6 +12,10 @@
         <h1 class="center">Alura Typer</h1>
     
         <p class="frase center">Kitty lucy gatona mini yuna princesa tigrao</p>        
+        <div class="center">
+            <img src="img/spinner.gif" alt="Spinner" id="spinner">    
+            <p class="erro">Ocorreu um erro, por favor tente novamente</p>
+         </div>
         <ul class="informacoes center">
                 <li>
                         <i class="small material-icons icones">description</i>
@@ -19,22 +23,42 @@
                 </li>
                 <li>
                         <i class="small material-icons icones">query_builder</i>
-                    <span class="tempo">10</span> segundos
+                    <span class="tempo">3</span> segundos
                 </li>
        </ul>
+      
+
+       </div>
        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
        <div class="botoes">
             <a class="btn-floating btn-large waves-effect waves-light ligthblue" id="reiniciar">
                     <i class="material-icons">restore</i>
                 </a>
-       </div>
+            <a class="btn-floating btn-large waves-effect waves-light green" id="placar">
+                <i class="material-icons">assignment</i>
+           </a>
+        </a>
+        <a class="btn-floating btn-large waves-effect waves-light orange" id="troca-frase">
+            <i class="material-icons">shuffle</i>
+        </a>
+        <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan">
+            <i class="material-icons">repeat_one</i>
+        </a>
+        <input type="number" min="0" id="frase-id">
+        <a id="botao-sync" class="btn-floating btn-large waves-effect waves-light yellow">
+            <i class="material-icons">swap_vert</i>
+        </a>
+    </div>
      
        <ul class="center">
            <li><span class="Contador-caracteres">0</span> Caracteres</li>
            <li><span class="Contador-palavras">0</span> Palavaras</li>
             
        </ul>
-
+       <div class="inseriNome"> 
+        <div><p class="nome-Jogador"> Nome do jogador: </p><textarea class="nome-digitacao" rows="1" cols="5"></textarea></div> 
+        <button class="botao-name">Inserir</button>
+    </div>
        <section class="placar">
            <h3 class="center">Placar</h3>
            <table class="centered bordered">
@@ -48,27 +72,16 @@
                </thead>
                <tbody>
                    <tr>
-                       <td>
-                           Douglas
-                       </td>
-                       <td>
-                           10
-                       </td>
-                       <td>
-                           20
-                       </td>
-                       <td class="remover">
-                            <a href="#">
-                                    <i onclick="removerTabela()" class="small material-icons">delete</i>
-                            </a>
-                       </td>
+                      
                    </tr>
                </tbody>
            </table>
        </section>
+    
        
         <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/frase.js"></script>
     </div>
 </body>
 </html>

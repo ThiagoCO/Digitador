@@ -14,3 +14,51 @@
 .icones{
     vertical-align: middle;
 }
+
+.placar {
+    display: none;
+}
+.mostra-placar{
+    display: inline;
+}
+body{
+    overflow: scroll;
+}
+.borda-verde{
+    border: 3px solid green;
+}
+.borda-vermelha{
+    border: 3px solid red;
+}
+.pergunta-nome{
+    width: 400px;
+    height: 600px;
+    display: block;
+
+}
+.nome-digitacao{
+    width: 200px;
+    height: 24px;
+   
+}
+.inseriNome{
+    display: none;
+}
+.insereNome-placar{
+    display: inline;
+}
+.erro{
+    color: red;
+    text-align: center;
+    display:none;
+    
+}
+#spinner{
+    display: none;
+}
+#frase-id{
+    width: 40px;
+}
+#botao-sync{
+    float: right;
+}
